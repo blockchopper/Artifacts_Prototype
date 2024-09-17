@@ -1,5 +1,13 @@
 {
   "dependencies": {
-    "grid-engine": "^2.45.0"
+    "@colyseus/monitor": "^0.15.7",
+    "@colyseus/playground": "^0.15.13",
+    "@colyseus/tools": "^0.15.41",
+    "colyseus": "^0.15.17",
+    "colyseus.js": "^0.15.26",
+    "grid-engine": "^2.45.0",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "tsx": "^4.19.1"
   }
 }

@@ -2,7 +2,7 @@ import { Room, Client } from "@colyseus/core";
 import { InputData, MyRoomState, Player } from "./schema/MyRoomState";
 
 export class MyRoom extends Room<MyRoomState> {
-  fixedTimeStep = 1000/4
+  fixedTimeStep = 1000/60 //1000/4 is goal
 
   
   onCreate (options: any) {
@@ -34,7 +34,7 @@ export class MyRoom extends Room<MyRoomState> {
 
 
   fixedTick(timeStep: number) {
-    const velocity = 32;
+    const velocity = 2; //32 is goal, or rather, 1 tile per tick
 
     this.state.players.forEach(player => {
       let input: InputData;

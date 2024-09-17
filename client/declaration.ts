@@ -12,3 +12,8 @@ declare module '*.png' {
     const value: number;
     export = value;
   }
+
+  declare module '*.json' {
+    const value: string;
+    export = value;
+  }

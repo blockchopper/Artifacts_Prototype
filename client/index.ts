@@ -1,17 +1,18 @@
 import Phaser from "phaser";
 import { Client, Room } from "colyseus.js";
-import {Part1Scene} from "./src/scenes/Part1Scene"
+import {GameScene} from "./src/scenes/GameScene"
 
 // game config
 const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    backgroundColor: '#b6d53c',
+    width: 1280,
+    height: 720,
+    backgroundColor: '#000000',
     parent: 'phaser-example',
     physics: { default: "arcade" },
     pixelArt: true,
-    scene: [ Part1Scene ],
+    scene: [ GameScene ],
+    autoCenter: Phaser.Scale.CENTER_BOTH,
 };
 
 // instantiate the game
