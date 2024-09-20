@@ -305,26 +305,34 @@ export class GameScene2 extends Phaser.Scene {
       console.log('executed fixed tick number ', this.currentTick)
       const cursors = this.input.keyboard.createCursorKeys();
       if (cursors.left.isDown && cursors.up.isDown) {
+        //@ts-ignore
         this.gridEngine.move("player", "up-left");
         this.playerSprite.setFlipX(true);
       } else if (cursors.left.isDown && cursors.down.isDown) {
+        //@ts-ignore
         this.gridEngine.move("player", "down-left");
         this.playerSprite.setFlipX(true);
       } else if (cursors.right.isDown && cursors.up.isDown) {
+        //@ts-ignore
         this.gridEngine.move("player", "up-right");
         this.playerSprite.setFlipX(false);
       } else if (cursors.right.isDown && cursors.down.isDown) {
+        //@ts-ignore
         this.gridEngine.move("player", "down-right");
         this.playerSprite.setFlipX(false);
       } else if (cursors.left.isDown) {
+        //@ts-ignore
         this.gridEngine.move("player", "left");
         this.playerSprite.setFlipX(true);
       } else if (cursors.right.isDown) {
+        //@ts-ignore
         this.gridEngine.move("player", "right");
         this.playerSprite.setFlipX(false);
       } else if (cursors.up.isDown) {
+        //@ts-ignore
         this.gridEngine.move("player", "up");
       } else if (cursors.down.isDown) {
+        //@ts-ignore
         this.gridEngine.move("player", "down");
       };
 
